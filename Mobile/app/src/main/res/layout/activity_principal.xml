@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BlancoMediTime">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_toolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtTitlePrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/principal_title_margin_top"
+                android:gravity="center_horizontal"
+                android:text="@string/principal_content_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/principal_title_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtSubtitlePrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/principal_subtitle_margin_top"
+                android:gravity="center_horizontal"
+                android:text="@string/principal_content_subtitle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/principal_subtitle_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtTitlePrincipal" />
+
+            <TextView
+                android:id="@+id/txtNextMedicinePrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/principal_next_medicine"
+                android:textColor="@color/GrisSubtituloMediTime"
+                android:textSize="@dimen/principal_next_medicine_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtSubtitlePrincipal" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNextMedicinePrincipal">
+
+                <LinearLayout
+                    android:id="@+id/ctnMedicinePrincipal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/principal_item_padding"
+                    app:layout_constraintBottom_toTopOf="@+id/ctnCalendarPrincipal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/principal_icon_size"
+                        android:layout_height="@dimen/principal_icon_size"
+                        android:layout_marginStart="@dimen/principal_container_margin_horizontal"
+                        android:src="@drawable/medicine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/principal_icon_margin_start"
+                        android:text="@string/menu_medicine"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/principal_item_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ctnCalendarPrincipal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/principal_item_spacing_vertical"
+                    android:layout_marginBottom="@dimen/principal_item_spacing_vertical"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/principal_item_padding"
+                    app:layout_constraintBottom_toTopOf="@+id/ctnSettingsPrincipal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ctnMedicinePrincipal">
+
+                    <ImageView
+                        android:layout_width="@dimen/principal_icon_size"
+                        android:layout_height="@dimen/principal_icon_size"
+                        android:layout_marginStart="@dimen/principal_container_margin_horizontal"
+                        android:src="@drawable/calendar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/principal_icon_margin_start"
+                        android:text="@string/menu_calendar"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/principal_item_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ctnSettingsPrincipal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/principal_item_padding"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ctnCalendarPrincipal">
+
+                    <ImageView
+                        android:layout_width="@dimen/principal_icon_size"
+                        android:layout_height="@dimen/principal_icon_size"
+                        android:layout_marginStart="@dimen/principal_container_margin_horizontal"
+                        android:src="@drawable/settings" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/principal_icon_margin_start"
+                        android:text="@string/menu_settings"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/principal_item_text_size" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/base_drawer_activity" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

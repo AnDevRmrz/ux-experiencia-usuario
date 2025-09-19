@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="AzulMediTime">#FF3396D3</color>
+    <color name="AzulOscuroMediTime">#FF1976D2</color>
+    <color name="ArenaMediTime">#FFEBCB90</color>
+    <color name="BlancoMediTime">#FFFEFEFA</color>
+    <color name="GrisMediTime">#FF878787</color>
+    <color name="GrisOscuroMediTime">#FF343433</color>
+    <color name="AzulMenuMediTime">#FFC0dFF1</color>
+    <color name="AzulMenuSeleccionadoMediTime">#FF85C1E9</color>
+    <color name="AmarilloSearchBarMediTime">#FFFFF0CE</color>
+    <color name="GrisIconosMediTime">#FF49454F</color>
+    <color name="GrisSubtituloMediTime">#FF787876</color>
+    <color name="GrisMedicineMediTime">#FF70706D</color>
+    <color name="GrisMedicineDetailsMediTime">#FF79747E</color>
+    <color name="AzulBackgroundPopupMediTime">#FFB3E5FC</color>
+</resources>

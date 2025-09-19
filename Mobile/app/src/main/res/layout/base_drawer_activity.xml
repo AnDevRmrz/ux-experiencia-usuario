@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Navigation drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/AzulMenuMediTime"
+        app:headerLayout="@layout/nav_header"
+        app:itemBackground="@drawable/nav_menu_item_background"
+        app:itemIconSize="32dp"
+        app:itemIconTint="@color/nav_menu_item_text"
+        app:itemTextAppearance="@style/NavMenuTextStyle"
+        app:itemTextColor="@color/nav_menu_item_text"
+        app:menu="@menu/my_menu" />
+
+</merge>
