@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Meditime" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Theme.Meditime" parent="Base.Theme.Meditime" />
+
+    <style name="MainButton" parent="Widget.Material3.Button.Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="backgroundTint">@color/AzulMediTime</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:minWidth">140dip</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="iconTint">@android:color/white</item>
+    </style>
+
+    <style name="SecondaryButton" parent="MainButton">
+        <item name="backgroundTint">@color/ArenaMediTime</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="iconTint">@android:color/black</item>
+    </style>
+
+    <style name="TertiaryButton" parent="MainButton">
+        <item name="backgroundTint">@color/GrisOscuroMediTime</item>
+    </style>
+
+    <style name="MainTextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">240dp</item>
+        <item name="boxStrokeColor">@color/text_input_stroke</item>
+        <item name="hintTextColor">@color/text_input_hint</item>
+        <item name="android:textColorHint">@color/text_input_hint</item>
+        <item name="endIconMode">clear_text</item>
+    </style>
+
+    <style name="CompactTextInputLayout" parent="MainTextInputLayout">
+        <item name="android:minHeight">@dimen/input_field_height</item>
+    </style>
+</resources>

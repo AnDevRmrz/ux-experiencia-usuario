@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BlancoMediTime">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_toolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ctnPasswordSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/settings_first_item_margin_top"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/settings_item_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="@dimen/settings_icon_size"
+                    android:layout_height="@dimen/settings_icon_size"
+                    android:layout_marginStart="@dimen/settings_icon_margin_start"
+                    android:src="@drawable/password" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/settings_text_margin_start"
+                    android:text="@string/change_password_settings"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/settings_item_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ctnTextSizeSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/settings_item_margin_top"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/settings_item_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ctnPasswordSettings">
+
+                <ImageView
+                    android:layout_width="@dimen/settings_icon_size"
+                    android:layout_height="@dimen/settings_icon_size"
+                    android:layout_marginStart="@dimen/settings_icon_margin_start"
+                    android:src="@drawable/text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/settings_text_margin_start"
+                    android:text="@string/text_size_settings"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/settings_item_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ctnVolumeSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/settings_item_margin_top"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/settings_item_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ctnTextSizeSettings">
+
+                <ImageView
+                    android:layout_width="@dimen/settings_icon_size"
+                    android:layout_height="@dimen/settings_icon_size"
+                    android:layout_marginStart="@dimen/settings_icon_margin_start"
+                    android:src="@drawable/volume" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/settings_text_margin_start"
+                    android:text="@string/volume_settings"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/settings_item_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ctnMelodySettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/settings_item_margin_top"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/settings_item_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ctnVolumeSettings">
+
+                <ImageView
+                    android:layout_width="@dimen/settings_icon_size"
+                    android:layout_height="@dimen/settings_icon_size"
+                    android:layout_marginStart="@dimen/settings_icon_margin_start"
+                    android:src="@drawable/melody" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/settings_text_margin_start"
+                    android:text="@string/melody_settings"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/settings_item_text_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegresarConfiguraciones"
+                style="@style/SecondaryButton"
+                android:layout_marginBottom="@dimen/settings_back_button_margin_bottom"
+                android:onClick="goBackToPrincipalActivity"
+                android:text="@string/regresar"
+                app:icon="@drawable/baseline_arrow_back_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/base_drawer_activity" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

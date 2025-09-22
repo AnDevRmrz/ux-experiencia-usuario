@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/content_background"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctnLogoInicial"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgLogoInicial"
+            android:layout_width="@dimen/main_logo_size"
+            android:layout_height="@dimen/main_logo_size"
+            android:layout_marginTop="@dimen/main_logo_margin_top"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_logo"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ctnButtonsInicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnLogInInicial"
+            style="@style/MainButton"
+            android:layout_marginBottom="@dimen/main_button_margin_bottom"
+            android:onClick="navigateToIngresoScreen"
+            android:text="@string/ingresar"
+            app:icon="@drawable/baseline_arrow_forward_24" />
+
+        <Button
+            android:id="@+id/btnCreateProfileInicial"
+            style="@style/MainButton"
+            android:layout_marginBottom="@dimen/main_button_final_margin_bottom"
+            android:onClick="navigateToCrearPerfilScreen"
+            android:text="@string/crear_perfil"
+            app:icon="@drawable/outline_add_24" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
