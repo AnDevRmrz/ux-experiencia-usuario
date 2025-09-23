@@ -15,152 +15,157 @@
 
         <include layout="@layout/include_toolbar" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/txtTitlePrincipal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:gravity="center_horizontal"
-                android:text="@string/principal_content_title"
-                android:textColor="@color/black"
-                android:textSize="34sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/txtSubtitlePrincipal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-                android:gravity="center_horizontal"
-                android:text="@string/principal_content_subtitle"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtTitlePrincipal" />
-
-            <TextView
-                android:id="@+id/txtNextMedicinePrincipal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/principal_next_medicine"
-                android:textColor="@color/GrisSubtituloMediTime"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtSubtitlePrincipal" />
+            android:layout_height="match_parent"
+            android:background="@color/BlancoMediTime"
+            android:fillViewport="true">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtNextMedicinePrincipal">
+                android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:id="@+id/ctnMedicinePrincipal"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/txtTitlePrincipal"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="12dp"
-                    app:layout_constraintBottom_toTopOf="@+id/ctnCalendarPrincipal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/principal_content_title"
+                    android:textColor="@color/black"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginStart="40dp"
-                        android:src="@drawable/medicine" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:text="@string/menu_medicine"
-                        android:textColor="@android:color/black"
-                        android:textSize="20sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/ctnCalendarPrincipal"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/txtSubtitlePrincipal"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="12dp"
-                    app:layout_constraintBottom_toTopOf="@+id/ctnSettingsPrincipal"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/principal_content_subtitle"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ctnMedicinePrincipal">
+                    app:layout_constraintTop_toBottomOf="@id/txtTitlePrincipal" />
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginStart="40dp"
-                        android:src="@drawable/calendar" />
+                <TextView
+                    android:id="@+id/txtNextMedicinePrincipal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/principal_next_medicine"
+                    android:textColor="@color/GrisSubtituloMediTime"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtSubtitlePrincipal" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:text="@string/menu_calendar"
-                        android:textColor="@android:color/black"
-                        android:textSize="20sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/ctnSettingsPrincipal"
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="12dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ctnCalendarPrincipal">
+                    app:layout_constraintTop_toBottomOf="@+id/txtNextMedicinePrincipal">
 
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_marginStart="40dp"
-                        android:src="@drawable/settings" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:id="@+id/ctnMedicinePrincipal"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:text="@string/menu_settings"
-                        android:textColor="@android:color/black"
-                        android:textSize="20sp" />
-                </LinearLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toTopOf="@+id/ctnCalendarPrincipal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="40dp"
+                            android:src="@drawable/medicine" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="@string/menu_medicine"
+                            android:textColor="@android:color/black"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ctnCalendarPrincipal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginBottom="19dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toTopOf="@+id/ctnSettingsPrincipal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ctnMedicinePrincipal">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="40dp"
+                            android:src="@drawable/calendar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="@string/menu_calendar"
+                            android:textColor="@android:color/black"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ctnSettingsPrincipal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ctnCalendarPrincipal">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="40dp"
+                            android:src="@drawable/settings" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:text="@string/menu_settings"
+                            android:textColor="@android:color/black"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
 
     </LinearLayout>
 
