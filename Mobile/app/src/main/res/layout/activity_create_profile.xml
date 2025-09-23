@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,18 +11,14 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="20dp"
         tools:context=".CreateProfileActivity">
 
         <!-- Contenedor de inputs -->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/ctnInputsCrearPerfil"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:background="@android:color/transparent"
-            app:layout_constraintBottom_toTopOf="@+id/ctnButtonsCrearPerfil"
+        <LinearLayout
+            android:id="@+id/ctnInputsCreateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -31,25 +27,20 @@
                 android:id="@+id/txtTitleCrearPerfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="59dp"
                 android:text="@string/crear_perfil"
                 android:textColor="@color/black"
-                android:textSize="32sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textSize="32sp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inputNombreIngreso"
                 style="@style/CompactTextInputLayout"
-                android:layout_marginTop="18dp"
-                android:hint="@string/nombre_completo"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtTitleCrearPerfil">
+                android:layout_marginTop="52dp"
+                android:hint="@string/nombre_completo">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
+                    android:layout_width="281dp"
                     android:layout_height="56dp"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
@@ -58,13 +49,11 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inputFechaNacimiento"
                 style="@style/CompactTextInputLayout"
-                android:hint="@string/fecha_nacimiento"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/inputNombreIngreso">
+                android:layout_marginTop="8dp"
+                android:hint="@string/fecha_nacimiento">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
+                    android:layout_width="281dp"
                     android:layout_height="56dp"
                     android:inputType="date"
                     android:textColor="@color/black"
@@ -74,13 +63,11 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inputCorreo"
                 style="@style/CompactTextInputLayout"
-                android:hint="@string/correo_electronico"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/inputFechaNacimiento">
+                android:layout_marginTop="8dp"
+                android:hint="@string/correo_electronico">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
+                    android:layout_width="281dp"
                     android:layout_height="56dp"
                     android:inputType="textEmailAddress"
                     android:textColor="@color/black"
@@ -90,13 +77,11 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inputCelular"
                 style="@style/CompactTextInputLayout"
-                android:hint="@string/celular"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/inputCorreo">
+                android:layout_marginTop="8dp"
+                android:hint="@string/celular">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
+                    android:layout_width="281dp"
                     android:layout_height="56dp"
                     android:inputType="phone"
                     android:textColor="@color/black"
@@ -106,13 +91,11 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inputContrasena"
                 style="@style/CompactTextInputLayout"
-                android:hint="@string/contrasena_nueva"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/inputCelular">
+                android:layout_marginTop="8dp"
+                android:hint="@string/contrasena_nueva">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
+                    android:layout_width="281dp"
                     android:layout_height="56dp"
                     android:inputType="textPassword"
                     android:textColor="@color/black"
@@ -122,13 +105,11 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inputRepetirContrasena"
                 style="@style/CompactTextInputLayout"
-                android:hint="@string/confirmar_contrasena"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/inputContrasena">
+                android:layout_marginTop="8dp"
+                android:hint="@string/confirmar_contrasena">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
+                    android:layout_width="281dp"
                     android:layout_height="56dp"
                     android:inputType="textPassword"
                     android:textColor="@color/black"
@@ -137,43 +118,39 @@
 
             <TextView
                 android:id="@+id/txtLimitContrasenaCrearPerfil"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="20dp"
                 android:lineSpacingExtra="4dp"
                 android:text="@string/condiciones_contrasena"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="@id/inputRepetirContrasena"
-                app:layout_constraintStart_toStartOf="@id/inputRepetirContrasena"
-                app:layout_constraintTop_toBottomOf="@id/inputRepetirContrasena" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/chkTratramientoDatosCrearPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/autorizacion_datos"
+                android:textSize="16sp" />
+        </LinearLayout>
 
         <!-- Contenedor de botones -->
         <LinearLayout
             android:id="@+id/ctnButtonsCrearPerfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:background="@android:color/transparent"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ctnInputsCrearPerfil">
-
-            <CheckBox
-                android:id="@+id/chkTratramientoDatosCrearPerfil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="10dp"
-                android:text="@string/autorizacion_datos"
-                android:textSize="16sp" />
+            app:layout_constraintTop_toBottomOf="@+id/ctnInputsCreateProfile"
+            app:layout_constraintVertical_bias="1.0">
 
             <Button
                 android:id="@+id/btnRegistrar"
                 style="@style/TertiaryButton"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="12dp"
                 android:onClick="showDialogConfirm"
                 android:text="@string/registrar"
                 app:icon="@drawable/baseline_arrow_forward_24" />
@@ -181,12 +158,12 @@
             <Button
                 android:id="@+id/btnRegresarCrearPerfil"
                 style="@style/SecondaryButton"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="47dp"
                 android:onClick="goBackToMainActivity"
                 android:text="@string/regresar"
                 app:icon="@drawable/baseline_arrow_back_24" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+</androidx.core.widget.NestedScrollView>
 
