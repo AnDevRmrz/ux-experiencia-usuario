@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Button vertical bias for short screens - keep at bottom -->
+    <!-- Button vertical bias for tall screens - same position as activity_main buttons -->
     <item name="ingreso_buttons_vertical_bias" format="float" type="dimen">1.0</item>
 </resources>

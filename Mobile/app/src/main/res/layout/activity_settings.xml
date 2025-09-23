@@ -22,126 +22,126 @@
                 android:id="@+id/ctnPasswordSettings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/settings_first_item_margin_top"
+                android:layout_marginTop="50dp"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/settings_item_padding"
+                android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:layout_width="@dimen/settings_icon_size"
-                    android:layout_height="@dimen/settings_icon_size"
-                    android:layout_marginStart="@dimen/settings_icon_margin_start"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="60dp"
                     android:src="@drawable/password" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/settings_text_margin_start"
+                    android:layout_marginStart="12dp"
                     android:text="@string/change_password_settings"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/settings_item_text_size" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ctnTextSizeSettings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/settings_item_margin_top"
+                android:layout_marginTop="25dp"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/settings_item_padding"
+                android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ctnPasswordSettings">
 
                 <ImageView
-                    android:layout_width="@dimen/settings_icon_size"
-                    android:layout_height="@dimen/settings_icon_size"
-                    android:layout_marginStart="@dimen/settings_icon_margin_start"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="60dp"
                     android:src="@drawable/text_size" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/settings_text_margin_start"
+                    android:layout_marginStart="12dp"
                     android:text="@string/text_size_settings"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/settings_item_text_size" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ctnVolumeSettings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/settings_item_margin_top"
+                android:layout_marginTop="25dp"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/settings_item_padding"
+                android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ctnTextSizeSettings">
 
                 <ImageView
-                    android:layout_width="@dimen/settings_icon_size"
-                    android:layout_height="@dimen/settings_icon_size"
-                    android:layout_marginStart="@dimen/settings_icon_margin_start"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="60dp"
                     android:src="@drawable/volume" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/settings_text_margin_start"
+                    android:layout_marginStart="12dp"
                     android:text="@string/volume_settings"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/settings_item_text_size" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ctnMelodySettings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/settings_item_margin_top"
+                android:layout_marginTop="25dp"
                 android:background="?attr/selectableItemBackground"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/settings_item_padding"
+                android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ctnVolumeSettings">
 
                 <ImageView
-                    android:layout_width="@dimen/settings_icon_size"
-                    android:layout_height="@dimen/settings_icon_size"
-                    android:layout_marginStart="@dimen/settings_icon_margin_start"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="60dp"
                     android:src="@drawable/melody" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/settings_text_margin_start"
+                    android:layout_marginStart="12dp"
                     android:text="@string/melody_settings"
                     android:textColor="@android:color/black"
-                    android:textSize="@dimen/settings_item_text_size" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <Button
                 android:id="@+id/btnRegresarConfiguraciones"
                 style="@style/SecondaryButton"
-                android:layout_marginBottom="@dimen/settings_back_button_margin_bottom"
+                android:layout_marginBottom="24dp"
                 android:onClick="goBackToPrincipalActivity"
                 android:text="@string/regresar"
                 app:icon="@drawable/baseline_arrow_back_24"
@@ -156,3 +156,4 @@
     <include layout="@layout/base_drawer_activity" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
+

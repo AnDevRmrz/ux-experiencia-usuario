@@ -22,27 +22,27 @@
                 android:id="@+id/ctnMedicineDetails"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/medicine_detail_container_margin_top"
+                android:layout_marginTop="60dp"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/medicine_detail_item_padding"
+                android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:layout_width="@dimen/medicine_detail_icon_size"
-                    android:layout_height="@dimen/medicine_detail_icon_size"
-                    android:layout_marginStart="@dimen/medicine_detail_icon_margin_start"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="60dp"
                     android:src="@drawable/medicine_detail" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/medicine_detail_text_margin_start"
+                    android:layout_marginStart="20dp"
                     android:text="@string/medicine_detail_medicine"
                     android:textColor="@color/GrisMedicineDetailsMediTime"
-                    android:textSize="@dimen/medicine_detail_text_size" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -51,24 +51,24 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/medicine_detail_item_padding"
+                android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ctnMedicineDetails">
 
                 <ImageView
-                    android:layout_width="@dimen/medicine_detail_icon_size"
-                    android:layout_height="@dimen/medicine_detail_icon_size"
-                    android:layout_marginStart="@dimen/medicine_detail_icon_margin_start"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="60dp"
                     android:src="@drawable/blister" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/medicine_detail_text_margin_start"
+                    android:layout_marginStart="20dp"
                     android:text="@string/medicine_detail_remaining"
                     android:textColor="@color/GrisMedicineDetailsMediTime"
-                    android:textSize="@dimen/medicine_detail_text_size" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -77,24 +77,24 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/medicine_detail_item_padding"
+                android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ctnMedicineRemaining">
 
                 <ImageView
-                    android:layout_width="@dimen/medicine_detail_icon_size"
-                    android:layout_height="@dimen/medicine_detail_icon_size"
-                    android:layout_marginStart="@dimen/medicine_detail_icon_margin_start"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="60dp"
                     android:src="@drawable/clock" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/medicine_detail_text_margin_start"
+                    android:layout_marginStart="20dp"
                     android:text="@string/medicine_detail_periodicity"
                     android:textColor="@color/GrisMedicineDetailsMediTime"
-                    android:textSize="@dimen/medicine_detail_text_size" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -106,33 +106,33 @@
                 android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/medicine_detail_item_padding"
+                android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ctnMedicinePeriodicity">
 
                 <ImageView
-                    android:layout_width="@dimen/medicine_detail_icon_size"
-                    android:layout_height="@dimen/medicine_detail_icon_size"
-                    android:layout_marginStart="@dimen/medicine_detail_icon_margin_start"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="60dp"
                     android:src="@drawable/alarm" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/medicine_detail_text_margin_start"
+                    android:layout_marginStart="20dp"
                     android:text="@string/medicine_detail_alarm"
                     android:textColor="@color/GrisMedicineDetailsMediTime"
-                    android:textSize="@dimen/medicine_detail_text_size" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/medicine_detail_actions_margin_bottom"
+                android:layout_marginBottom="60dp"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
-                android:padding="@dimen/medicine_detail_item_padding"
+                android:padding="12dp"
                 app:layout_constraintBottom_toTopOf="@+id/btnRegresarMedicine"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
@@ -146,11 +146,11 @@
                     android:focusable="true"
                     android:gravity="center_horizontal"
                     android:orientation="vertical"
-                    android:padding="@dimen/medicine_detail_action_padding">
+                    android:padding="12dp">
 
                     <ImageView
-                        android:layout_width="@dimen/medicine_detail_action_icon_size"
-                        android:layout_height="@dimen/medicine_detail_action_icon_size"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
                         android:src="@drawable/alarm" />
 
                     <TextView
@@ -158,7 +158,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/medicine_detail_edit"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/medicine_detail_action_text_size" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -170,11 +170,11 @@
                     android:focusable="true"
                     android:gravity="center_horizontal"
                     android:orientation="vertical"
-                    android:padding="@dimen/medicine_detail_action_padding">
+                    android:padding="12dp">
 
                     <ImageView
-                        android:layout_width="@dimen/medicine_detail_action_icon_size"
-                        android:layout_height="@dimen/medicine_detail_action_icon_size"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
                         android:src="@drawable/calendar" />
 
                     <TextView
@@ -182,7 +182,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/medicine_detail_follow"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/medicine_detail_action_text_size" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -195,11 +195,11 @@
                     android:gravity="center_horizontal"
                     android:onClick="showConfirmationDialog"
                     android:orientation="vertical"
-                    android:padding="@dimen/medicine_detail_action_padding">
+                    android:padding="12dp">
 
                     <ImageView
-                        android:layout_width="@dimen/medicine_detail_action_icon_size"
-                        android:layout_height="@dimen/medicine_detail_action_icon_size"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
                         android:src="@drawable/delete" />
 
                     <TextView
@@ -207,7 +207,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/medicine_detail_delete"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/medicine_detail_action_text_size" />
+                        android:textSize="14sp" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -215,7 +215,7 @@
             <Button
                 android:id="@+id/btnRegresarMedicine"
                 style="@style/SecondaryButton"
-                android:layout_marginBottom="@dimen/medicine_detail_back_button_margin_bottom"
+                android:layout_marginBottom="24dp"
                 android:onClick="goBackToMedicineActivity"
                 android:text="@string/regresar"
                 app:icon="@drawable/baseline_arrow_back_24"
@@ -229,3 +229,4 @@
     <include layout="@layout/base_drawer_activity" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
+

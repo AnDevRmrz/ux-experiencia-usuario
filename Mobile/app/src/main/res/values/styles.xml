@@ -2,6 +2,6 @@
 <resources>
 
     <style name="NavMenuTextStyle" parent="TextAppearance.Material3.BodyLarge">
-        <item name="android:textSize">@dimen/nav_menu_text_size</item>
+        <item name="android:textSize">18sp</item>
     </style>
 </resources>

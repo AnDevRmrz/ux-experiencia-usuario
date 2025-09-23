@@ -20,10 +20,10 @@
 
             <ImageView
                 android:id="@+id/imgAddMedicine"
-                android:layout_width="@dimen/medicine_add_icon_size"
-                android:layout_height="@dimen/medicine_add_icon_size"
-                android:layout_marginTop="@dimen/medicine_add_icon_margin_top"
-                android:layout_marginEnd="@dimen/medicine_add_icon_margin_end"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
                 android:clickable="true"
                 android:focusable="true"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
                 android:id="@+id/cvMedicine1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/medicine_first_card_margin_top"
+                android:layout_marginTop="50dp"
                 android:backgroundTint="@android:color/transparent"
                 android:checkable="true"
                 android:clickable="true"
@@ -50,8 +50,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal|center_vertical"
-                    android:minWidth="@dimen/medicine_card_min_width"
-                    android:minHeight="@dimen/medicine_card_min_height"
+                    android:minWidth="250dp"
+                    android:minHeight="50dp"
                     android:text="@string/medicine1"
                     android:textColor="@color/GrisMedicineMediTime"
                     android:textSize="20sp" />
@@ -61,7 +61,7 @@
                 android:id="@+id/cvMedicine2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/medicine_card_spacing_normal"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="@android:color/transparent"
                 android:checkable="true"
                 android:clickable="true"
@@ -77,8 +77,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal|center_vertical"
-                    android:minWidth="@dimen/medicine_card_min_width"
-                    android:minHeight="@dimen/medicine_card_min_height"
+                    android:minWidth="250dp"
+                    android:minHeight="50dp"
                     android:text="@string/medicine2"
                     android:textColor="@color/GrisMedicineMediTime"
                     android:textSize="20sp" />
@@ -88,7 +88,7 @@
                 android:id="@+id/cvMedicine3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/medicine_card_spacing_normal"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="@android:color/transparent"
                 android:checkable="true"
                 android:clickable="true"
@@ -104,8 +104,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal|center_vertical"
-                    android:minWidth="@dimen/medicine_card_min_width"
-                    android:minHeight="@dimen/medicine_card_min_height"
+                    android:minWidth="250dp"
+                    android:minHeight="50dp"
                     android:text="@string/medicine3"
                     android:textColor="@color/GrisMedicineMediTime"
                     android:textSize="20sp" />
@@ -114,7 +114,7 @@
             <Button
                 android:id="@+id/btnRegresarConfiguraciones"
                 style="@style/SecondaryButton"
-                android:layout_marginBottom="@dimen/medicine_back_button_margin_bottom"
+                android:layout_marginBottom="24dp"
                 android:onClick="goBackToPrincipalActivity"
                 android:text="@string/regresar"
                 app:icon="@drawable/baseline_arrow_back_24"
@@ -129,3 +129,4 @@
     <include layout="@layout/base_drawer_activity" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
+
