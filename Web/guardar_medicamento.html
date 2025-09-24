@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/guardar_medicamento.css" />
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/guardar_medicamento.js"></script>
+    <title>MediTime</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="menu_bar">
+                <div class="options_button">
+                    <img id="menu_button" src="img/menu_icon.png" height="12" width="18">
+                </div>
+                <div class="menu_title" align="center">
+                    Registro de Medicamento
+                </div>
+                <div class="perfil_button">
+                    <img src="img/perfil_icon.png" height="20">
+                </div>
+            </div>
+        </div>
+        <div id="main_content" align="center">
+            <div class="form_guardar_medicamento" align="left">
+                <div class="material_input_content">
+                    <div class="input_content">
+                        <input id="medicamento" type="text" placeholder="Medicamento" />
+                    </div>
+                    <div class="action_content">
+                        <img class="clear_button" src="img/clear_icon.png" height="20">
+                    </div>
+                </div>
+                <div class="material_input_content">
+                    <div class="input_content">
+                        <input id="tratamiento" type="text" placeholder="Tratamiento" />
+                    </div>
+                    <div class="action_content">
+                        <img class="clear_button" src="img/clear_icon.png" height="20">
+                    </div>
+                </div>
+                <div class="guardar_medicamento_combo material_input_content margin_right">
+                    <div class="input_content">
+                        <select name="tipo" id="tipo_medicamento">
+                            <option value="">Seleccione Tipo</option>
+                            <option value="capsulas">Cápsulas</option>
+                            <option value="sobre">Sobre</option>
+                            <option value="ml">ML</option>
+                        </select>
+                    </div>
+                    <div class="action_content">
+                        <img class="clear_button" src="img/flecha_combobox.png" height="7">
+                    </div>
+                </div>
+                <div class="guardar_medicamento_combo material_input_content">
+                    <div class="input_content">
+                        <select name="dosis" id="dosis_medicamento">
+                            <option value="">Seleccione Dosis</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="action_content">
+                        <img class="clear_button" src="img/flecha_combobox.png" height="7">
+                    </div>
+                </div>
+                <div class="guardar_medicamento_combo material_input_content margin_right">
+                    <div class="input_content">
+                        <select name="frecuencia" id="frecuencia_medicamento">
+                            <option value="">Seleccione Frecuencia</option>
+                            <option value="6">6h</option>
+                            <option value="8">8h</option>
+                            <option value="12">12h</option>
+                            <option value="24">24h</option>
+                        </select>
+                    </div>
+                    <div class="action_content">
+                        <img class="clear_button" src="img/flecha_combobox.png" height="7">
+                    </div>
+                </div>
+                <div class="guardar_medicamento_combo material_input_content">
+                    <div class="input_content">
+                        <select name="cantidad" id="cantidad_medicamento">
+                            <option value="">Seleccione Cantidad</option>
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="60">60</option>
+                        </select>
+                    </div>
+                    <div class="action_content">
+                        <img class="clear_button" src="img/flecha_combobox.png" height="7">
+                    </div>
+                </div>
+                <div class="label_duracion_tratamiento">
+                    Duración del Tratamiento
+                </div>
+                <div class="guardar_medicamento_combo material_input_content margin_right">
+                    <div class="input_content">
+                        <select name="duracion" id="duracion_medicamento">
+                            <option value="">Seleccione Duración</option>
+                            <option value="7">7 días</option>
+                            <option value="15">15 días</option>
+                            <option value="30">1 mes</option>
+                            <option value="90">3 meses</option>
+                        </select>
+                    </div>
+                    <div class="action_content">
+                        <img class="clear_button" src="img/flecha_combobox.png" height="7">
+                    </div>
+                </div>
+                <div class="checkbox_indefinido_content">
+                    <input type="checkbox" id="duracion_indefinida_check" name="indefinido_check" value="1" />
+                    <label for="indefinido_check">Indefinido</label>
+                </div>
+                <div class="label_hora_inicio">
+                    Hora Inicio
+                </div>
+                <div class="material_input_content">
+                    <div class="input_content">
+                        <input id="hora_inicio" type="text" placeholder="hh:mm" />
+                    </div>
+                </div>
+                <div id="guardar_medicamento_button" class="content_button_agregar" align="center">
+                    <div class="round_button">
+                        <div class="content_round_button">
+                            <div class="icon_round_button_content">
+                                <img src="img/flecha_derecha_icon.png" height="15">
+                            </div>
+                            <div class="label_round_button">
+                                Registrar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="extra_space"></div>
+        <div id="footer" align="center">
+            <div id="footer_label">MediTime 2025</div>
+        </div>
+    </div>
+    <div id="modal_general" class="modal">
+        <div class="modal_background hidden_content">
+        </div>
+        <div class="modal_dialog hidden_content">
+            <div class="modal_body" align="center">
+                <img class="modal_icono_ok" src="img/ok_icon.png" height="10">
+                <div class="modal_mensaje_confirmacion">¡Confirmado!</div>
+                <div class="modal_mensaje_descripcion">Tu medicamento ha sido registrado</div>
+            </div>
+        </div>
+    </div>
+    <div id="menu_lateral">
+        <div id="menu_background"></div>
+        <div id="menu_content">            
+            <div class="menu_option_content" redirectTo="home.html">
+                <div class="menu_option_icon">
+                    <img src="img/home_icon.png" height="50">
+                </div>
+                <div class="menu_option_description">Home</div>
+            </div>
+            <div class="menu_option_content" redirectTo="mis_medicamentos.html">
+                <div class="menu_option_icon">
+                    <img src="img/agregar_medicamento.png" height="50">
+                </div>
+                <div class="menu_option_description">Registro de Medicamentos</div>
+            </div>
+            <div class="menu_option_content" redirectTo="calendario.html">
+                <div class="menu_option_icon">
+                    <img src="img/calendario.png" height="50">
+                </div>
+                <div class="menu_option_description">Calendario</div>
+            </div>
+            <div class="menu_option_content" redirectTo="reportes.html">
+                <div class="menu_option_icon">
+                    <img src="img/folder_icon.png" height="50">
+                </div>
+                <div class="menu_option_description">Reportes</div>
+            </div>
+            <div class="menu_option_content" redirectTo="home.html">
+                <div class="menu_option_icon">
+                    <img src="img/cerrar_sesion_icon.png" height="50">
+                </div>
+                <div class="menu_option_description">Cerrar Sesión</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

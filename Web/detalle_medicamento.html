@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/detalle_medicamento.css" />
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/detalle_medicamento.js"></script>
+    <title>MediTime</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="menu_bar">
+                <div class="options_button">
+                    <img id="menu_button" src="img/menu_icon.png" height="12" width="18">
+                </div>
+                <div class="menu_title" align="center">
+                    Detalle Medicamento
+                </div>
+                <div class="perfil_button">
+                    <img src="img/perfil_icon.png" height="20">
+                </div>
+            </div>
+        </div>
+        <div id="main_content" align="center">
+            <div class="detalle_medicamento_content">
+                <div class="column_detail" align="left">
+                    <div class="row_detail">
+                        <div class="row_icon_content">
+                            <img src="img/detalle_medicamento.png" height="40">
+                        </div>
+                        <div class="row_description_content">
+                            <div class="row_description">
+                                Acetaminofen
+                            </div>
+                            <div class="row_description">
+                                Cápsulas
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row_detail">
+                        <div class="row_icon_content">
+                            <img src="img/blister_icon.png" height="40">
+                        </div>
+                        <div class="row_description_content">
+                            <div class="row_description">
+                                7 Cápsulas
+                            </div>
+                            <div class="row_description">
+                                restantes
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row_detail">
+                        <div class="row_icon_content">
+                            <img src="img/frecuencia_icon.png" height="40">
+                        </div>
+                        <div class="row_description_content">
+                            <div class="row_description">
+                                2 veces al día
+                            </div>
+                            <div class="row_description">
+                                8:00 A.M - 8:00 P.M
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row_detail">
+                        <div class="row_icon_content">
+                            <img src="img/alarma_icon.png" height="40">
+                        </div>
+                        <div class="row_description_content">
+                            <div class="one_row_description">
+                                Ajustes de Alarma
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column_actions">
+                    <div id="seguimiento_button" class="row_action_button">
+                        <div class="row_action_icon">
+                            <img src="img/calendario.png" height="40">
+                        </div>
+                        <div class="row_action_description">
+                            Seguimiento
+                        </div>
+                    </div>
+                    <div id="eliminar_medicamento" class="row_action_button">
+                        <div class="row_action_icon">
+                            <img src="img/eliminar_icon.png" height="40">
+                        </div>
+                        <div class="row_action_description">
+                            Eliminar
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="extra_space"></div>
+        <div id="footer" align="center">
+            <div id="footer_label">MediTime 2025</div>
+        </div>
+    </div>
+    <div id="modal_general" class="modal">
+        <div class="modal_background hidden_content">
+        </div>
+        <div class="modal_dialog hidden_content">
+            <div class="modal_body" align="center">
+                <div class="modal_mensaje_confirmacion">¿Eliminar medicamento?</div>
+                <div class="modal_mensaje_descripcion">Si elimina este medicamento, ya no</div>
+                <div class="modal_mensaje_descripcion">recibirá alarma sobre él.</div>
+                <div class="modal_actions_content" align="right">
+                    <div class="modal_action">
+                        Atrás
+                    </div>
+                    <div class="modal_action">
+                        Eliminar
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu_lateral">
+        <div id="menu_background"></div>
+        <div id="menu_content">            
+            <div class="menu_option_content" redirectTo="home.html">
+                <div class="menu_option_icon">
+                    <img src="img/home_icon.png" height="50">
+                </div>
+                <div class="menu_option_description">Home</div>
+            </div>
+            <div class="menu_option_content" redirectTo="mis_medicamentos.html">
+                <div class="menu_option_icon">
+                    <img src="img/agregar_medicamento.png" height="50">
+                </div>
+                <div class="menu_option_description">Registro de Medicamentos</div>
+            </div>
+            <div class="menu_option_content" redirectTo="calendario.html">
+                <div class="menu_option_icon">
+                    <img src="img/calendario.png" height="50">
+                </div>
+                <div class="menu_option_description">Calendario</div>
+            </div>
+            <div class="menu_option_content" redirectTo="reportes.html">
+                <div class="menu_option_icon">
+                    <img src="img/folder_icon.png" height="50">
+                </div>
+                <div class="menu_option_description">Reportes</div>
+            </div>
+            <div class="menu_option_content" redirectTo="home.html">
+                <div class="menu_option_icon">
+                    <img src="img/cerrar_sesion_icon.png" height="50">
+                </div>
+                <div class="menu_option_description">Cerrar Sesión</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

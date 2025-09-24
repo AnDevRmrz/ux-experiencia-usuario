@@ -1,0 +1,126 @@
+.form_guardar_medicamento {
+
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 450px;
+}
+
+.form_guardar_medicamento .material_input_content {
+
+    width: 100%;
+}
+
+.form_guardar_medicamento .guardar_medicamento_combo {
+
+    width: 210px;
+    min-width: 100px;
+}
+
+.margin_right {
+
+    margin-right: 21px;
+}
+
+.label_duracion_tratamiento {
+
+    margin-bottom: 5px;
+}
+
+.checkbox_indefinido_content {
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 16px;
+}
+
+.label_hora_inicio {
+
+    margin-bottom: 5px;
+}
+
+.content_button_agregar {
+
+    margin-top: 25px;
+}
+
+.material_input_content {
+
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: #3396D3;
+    height: 56px;
+    background-color: #FFFFFF;
+    min-width: 300px;
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.material_input_content .input_content {
+
+    display: inline-block;
+    vertical-align: middle;
+    width: 85%;
+    margin-left: 10px;
+}
+
+.material_input_content .input_content input {
+
+    border: 0px;
+    height: 50px;
+    width: 100%;
+    outline: none;
+}
+
+.material_input_content .action_content {
+
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
+
+.material_input_content select {
+
+    border: none;
+    background: transparent;
+    width: 100%;
+    margin-top: 19px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.clear_button {
+
+    cursor: pointer;
+}
+
+.column {
+
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+}
+
+.consejos_contrasenia {
+
+    font-weight: 300;
+    width: 300px;
+}
+
+@media screen and (max-width: 400px) {
+
+    .form_guardar_medicamento .material_input_content {
+        width: 350px;
+    }
+
+    .label_hora_inicio {
+        margin-top: 10px;
+    }
+
+    .form_guardar_medicamento {        
+        width: 100%;
+    }
+}

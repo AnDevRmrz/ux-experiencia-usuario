@@ -1,0 +1,61 @@
+.column_detail {
+
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+}
+
+.row_detail {
+
+    margin-top: 15px;
+}
+
+.row_icon_content {
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+.row_description_content {
+
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.row_description {
+
+    color: #79747E;
+}
+
+.one_row_description {
+
+    color: #79747E;
+    margin-top: 7px;
+}
+
+.column_actions {
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+.row_action_button {
+
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.row_action_icon {}
+
+.row_action_description {
+
+    color: #79747E;
+}
+
+.detalle_medicamento_content {
+
+    margin-top: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
