@@ -45,7 +45,7 @@ class MedicineDetailActivity : BaseMenuActivity() {
             .setMessage(getString(R.string.medicine_detail_delete_confirm_message))
             .setPositiveButton(getString(R.string.medicine_detail_delete)) { dialog, _ ->
                 val intent = Intent(this, MedicineActivity::class.java)
-                finish()
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(intent)
             }
             .setNegativeButton(getString(R.string.medicine_detail_back)) { dialog, _ -> dialog.dismiss() }
@@ -65,5 +65,17 @@ class MedicineDetailActivity : BaseMenuActivity() {
         }
 
         dialog.show()
+    }
+
+    fun navigateToAlarm(view: View){
+        val intent = Intent(this, AlarmActivity::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        startActivity(intent)
+    }
+
+    fun navigateToMedicineFollowUp(view: View){
+        val intent = Intent(this, MedicineFollowUpActivity::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        startActivity(intent)
     }
 }

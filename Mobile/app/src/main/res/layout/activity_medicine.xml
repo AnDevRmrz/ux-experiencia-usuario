@@ -11,7 +11,8 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:context=".MedicineActivity">
 
         <include layout="@layout/include_toolbar" />
 
@@ -42,6 +43,7 @@
                         android:layout_marginEnd="41dp"
                         android:clickable="true"
                         android:focusable="true"
+                        android:onClick="navigateToNewMedicine"
                         app:srcCompat="@drawable/medicine" />
 
                     <com.google.android.material.card.MaterialCardView
@@ -54,7 +56,7 @@
                         android:checkable="true"
                         android:clickable="true"
                         android:focusable="true"
-                        android:onClick="navegateToMedicineDetails"
+                        android:onClick="navigateToMedicineDetails"
                         app:cardCornerRadius="5dp"
                         app:strokeColor="@color/AzulMediTime">
 
@@ -79,7 +81,7 @@
                         android:checkable="true"
                         android:clickable="true"
                         android:focusable="true"
-                        android:onClick="navegateToMedicineDetails"
+                        android:onClick="navigateToMedicineDetails"
                         app:cardCornerRadius="5dp"
                         app:strokeColor="@color/AzulMediTime">
 
@@ -104,7 +106,7 @@
                         android:checkable="true"
                         android:clickable="true"
                         android:focusable="true"
-                        android:onClick="navegateToMedicineDetails"
+                        android:onClick="navigateToMedicineDetails"
                         app:cardCornerRadius="5dp"
                         app:strokeColor="@color/AzulMediTime">
 
