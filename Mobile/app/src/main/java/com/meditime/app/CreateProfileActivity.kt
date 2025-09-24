@@ -34,7 +34,7 @@ class CreateProfileActivity : AppCompatActivity() {
             message = getString(R.string.dialog_message_registro)
         ) {
             val intent = Intent(this, PrincipalActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
         }
     }

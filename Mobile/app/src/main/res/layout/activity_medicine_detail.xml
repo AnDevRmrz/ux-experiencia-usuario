@@ -11,7 +11,8 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:context=".MedicineDetailActivity">
 
         <include layout="@layout/include_toolbar" />
 
@@ -25,7 +26,7 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:id="@+id/ctnInfoDetails"
+                    android:id="@+id/ctnInputNewMedicine"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="60dp"
@@ -111,6 +112,7 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:gravity="center_vertical"
+                        android:onClick="navigateToAlarm"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -137,7 +139,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ctnInfoDetails"
+                    app:layout_constraintTop_toBottomOf="@+id/ctnInputNewMedicine"
                     app:layout_constraintVertical_bias="1.0">
 
                     <LinearLayout
@@ -179,6 +181,7 @@
                             android:clickable="true"
                             android:focusable="true"
                             android:gravity="center_horizontal"
+                            android:onClick="navigateToMedicineFollowUp"
                             android:orientation="vertical"
                             android:padding="12dp">
 

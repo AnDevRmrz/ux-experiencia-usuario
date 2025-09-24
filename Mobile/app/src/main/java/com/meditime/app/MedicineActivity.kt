@@ -36,7 +36,13 @@ class MedicineActivity : BaseMenuActivity() {
         startActivity(intent)
     }
 
-    fun navegateToMedicineDetails(view: View) {
+    fun navigateToNewMedicine(view: View) {
+        val intent = Intent(this, NewMedicineActivity::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        startActivity(intent)
+    }
+
+    fun navigateToMedicineDetails(view: View) {
         val intent = Intent(this, MedicineDetailActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
         startActivity(intent)

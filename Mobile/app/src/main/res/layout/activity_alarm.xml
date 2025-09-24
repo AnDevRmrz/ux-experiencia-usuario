@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BlancoMediTime"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".AlarmActivity">
+
+        <TextView
+            android:id="@+id/txtTitleAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:text="@string/alarm_title"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="47dp"
+            android:backgroundTint="@android:color/transparent"
+            android:checkable="false"
+            android:clickable="false"
+            android:focusable="false"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/AzulMediTime">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minWidth="281dp"
+                android:minHeight="74dp"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:text="@string/medicine2"
+                android:textColor="@color/GrisMedicineMediTime"
+                android:textSize="20sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="17dp"
+            android:backgroundTint="@android:color/transparent"
+            android:checkable="false"
+            android:clickable="false"
+            android:focusable="false"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/AzulMediTime">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minWidth="281dp"
+                android:minHeight="74dp"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:text="@string/alarm_remaining"
+                android:textColor="@color/GrisMedicineMediTime"
+                android:textSize="20sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="17dp"
+            android:backgroundTint="@android:color/transparent"
+            android:checkable="false"
+            android:clickable="false"
+            android:focusable="false"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/AzulMediTime">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minWidth="281dp"
+                android:minHeight="74dp"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:text="@string/alarm_dose"
+                android:textColor="@color/GrisMedicineMediTime"
+                android:textSize="20sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@android:color/transparent"
+            android:checkable="false"
+            android:clickable="false"
+            android:focusable="false"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/AzulMediTime">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minWidth="281dp"
+                android:minHeight="74dp"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:text="@string/alarm_time"
+                android:textColor="@color/GrisMedicineMediTime"
+                android:textSize="20sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnSnoozeAlarm"
+            style="@style/MainButton"
+            android:layout_marginTop="60dp"
+            android:onClick="stopAlarm"
+            android:text="@string/alarm_button_confirm"
+            app:icon="@drawable/baseline_check_24" />
+
+        <Button
+            android:id="@+id/btnPostponeAlarm"
+            style="@style/SnoozeButton"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="30dp"
+            android:onClick="stopAlarm"
+            android:text="@string/alarm_button_snooze"
+            android:textStyle="bold"
+            app:icon="@drawable/outline_alarm_24" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
