@@ -1,0 +1,35 @@
+.lista_medicamentos_content {
+
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.agregar_medicamento_content {
+
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
+
+.medicamento_row {
+
+    width: 345px;
+    height: 74px;
+    color: #777677;
+    border: 1px solid;
+    border-color: #3396D3;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.nombre_medicamento_content {
+
+    margin-top: 14px;
+    font-size: 22px;
+}
+
+.nombre_tratamiento_medicamento_content {
+
+    font-size: 13px;
+}

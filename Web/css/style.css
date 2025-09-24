@@ -1,0 +1,291 @@
+body {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    background-color: #FEFEFA;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    height: 100vh;
+    overflow: auto;
+}
+
+#logo {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu_lateral {
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+#menu_background {
+
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+#menu_content {
+
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    top: 0px;
+    left: -50%;
+    background-color: #C0E0F0;
+}
+
+.menu_option_content {
+
+    margin-left: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.menu_option_icon {
+
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    width: 60px;
+}
+
+.menu_option_description {
+
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.content_form h1 {
+
+    font-weight: 200;
+}
+
+#extra_space {
+    height: 70px;
+    width: 100%;
+}
+
+#footer {
+
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 63px;
+    background-color: #3396D3;
+    z-index: 3000;
+}
+
+#footer_label {
+
+    margin-top: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.autorizar_tratamiento_content {
+
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.content_button_ingresar {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.round_button {
+
+    width: 147px;
+    height: 56px;
+    background: #3396D3;
+    border: 1px solid;
+    border-color: #3396D3;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.content_round_button {
+
+    margin-top: 15px;
+}
+
+.icon_round_button_content {
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4px;
+}
+
+.label_round_button {
+
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 500;
+    color: #FEFEFA;
+    margin-top: 2px;
+}
+
+.menu_bar {
+
+    background-color: #FFF0CE;
+    width: 100%;
+    height: 89px;
+    border: 1px solid;
+    border-color: #FFF0CE;
+    border-radius: 30px;
+    margin-top: 10px;
+    position: fixed;
+    top: 0px;
+}
+
+.options_button {
+
+    position: absolute;
+    left: 15px;
+    top: 35px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.menu_title {
+
+    width: 100%;
+    margin-top: 28px;
+    font-size: 25px;
+}
+
+.perfil_button {
+
+    position: absolute;
+    width: 20px;
+    right: 15px;
+    top: 35px;
+    cursor: pointer;
+}
+
+#main_content {
+
+    margin-top: 110px;
+}
+
+.option_images {
+
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.option_image {
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.option_image_label {
+
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.modal {
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.modal_background {
+
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    left: 0px;
+    top: 0px;
+}
+
+.modal_dialog {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #BFDFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: #BFDFEF;
+    border-radius: 30px;
+}
+
+.modal_body {
+
+    padding: 25px;
+}
+
+.hidden_content {
+
+    display: none;
+}
+
+.modal_mensaje_confirmacion {
+
+    font-size: 25px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.modal_mensaje_descripcion {
+
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.modal_actions_content {
+
+    margin-top: 20px;
+}
+
+.modal_action {
+
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+
+    #menu_content {
+
+        width: 100%;
+        top: 0px;
+        left: -100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .menu_option_description {
+        font-size: 13px;
+    }
+}
