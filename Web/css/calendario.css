@@ -1,0 +1,246 @@
+.calendar_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    gap: 40px;
+}
+
+.calendar_general_content {
+
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: #EEEEEE;
+    background-color: #EEEEEE;
+}
+
+.calendar_top_date_label {
+
+    border-bottom: 1px solid;
+    border-color: #CAC4D0;
+}
+
+.calendar_top_date_label_value {
+
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.calendar_controls_content {
+
+    width: 100%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.calendar_row_header_day {
+
+    width: 85px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 50px;
+}
+
+.calendar_day {
+
+    width: 85px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 50px;
+}
+
+.calendar_month_selector_content {
+
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.calendar_month_selector {
+
+    margin-top: 16px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.calendar_month_chooser_content {
+
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+}
+
+.flecha_derecha_calendar {
+
+    margin-right: 20px;
+    margin-left: 25px;
+}
+
+.calendar_month_chooser_content img {
+
+    cursor: pointer;
+}
+
+.complete_day {
+
+    background-color: #009E60;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: #009E60;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 35px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.parcial_day {
+
+    background-color: #FFD700;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: #FFD700;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 35px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.incomplete_day {
+
+    background-color: #FF1313;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: #FF1313;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 35px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.calendar_day_descriptions_content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.calendar_day_description {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar_day_description:last-child {
+    margin-bottom: 0;
+}
+
+.calendar_day_description_color {
+
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.calendar_day_description_label {
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.complete_color {
+
+    background-color: #009E60;
+}
+
+.incomplete_color {
+
+    background-color: #FF1313;
+}
+
+.parcial_color {
+
+    background-color: #FFD700;
+}
+
+@media screen and (max-width: 600px) {
+
+    .calendar_container {
+        min-height: calc(100vh - 250px);
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .calendar_general_content {
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    .calendar_day_descriptions_content {
+        align-items: center;
+    }
+
+    .calendar_row_header_day {
+        width: 45px;
+    }
+
+    .calendar_day {
+        width: 45px;
+    }
+
+    .calendar_month_selector_content {
+        width: 49%;        
+    }    
+    
+}
+
+@media screen and (max-width: 320px) {
+
+    .calendar_container {
+        min-height: calc(100vh - 280px);
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .calendar_general_content {
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    .calendar_day_descriptions_content {
+        align-items: center;
+    }
+
+    .calendar_row_header_day {
+        width: 40px;
+    }
+
+    .calendar_day {
+        width: 40px;
+    }
+
+    .calendar_month_selector_content {
+        width: 49%;        
+    }
+}
+
