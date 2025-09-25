@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/calendario.css" />
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <title>MediTime</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="menu_bar">
+                <div class="options_button">
+                    <img id="menu_button" src="img/menu_icon.png" height="12" width="18">
+                </div>
+                <div class="menu_title" align="center">
+                    Calendario
+                </div>
+                <div class="perfil_button">
+                    <img src="img/perfil_icon.png" height="20">
+                </div>
+            </div>
+        </div>
+        <div id="main_content" align="center">
+            <div class="calendar_container">
+                <div class="calendar_general_content">
+                    <div class="calendar_top_date_label" align="left">
+                        <div class="calendar_top_date_label_value">
+                            Lunes, Julio 14
+                        </div>                    
+                    </div>
+                <div class="calendar_controls_content">
+                    <div class="calendar_month_selector_content" align="left">
+                        <div class="calendar_month_selector">
+                            Julio 2025
+                        </div>
+                    </div>
+                    <div class="calendar_month_chooser_content" align="right">
+                        <img src="img/flecha_calendar_izquierda_icon.png" height="12">
+                        <img class="flecha_derecha_calendar" src="img/flecha_calendar_derecha_icon.png" height="12">
+                    </div>
+                </div>
+                <div class="calendar_main_content">
+                    <div class="calendar_row_header">
+                        <div class="calendar_row_header_day">
+                            D
+                        </div><div class="calendar_row_header_day">
+                            L
+                        </div><div class="calendar_row_header_day">
+                            M
+                        </div><div class="calendar_row_header_day">
+                            M
+                        </div><div class="calendar_row_header_day">
+                            J
+                        </div><div class="calendar_row_header_day">
+                            V
+                        </div><div class="calendar_row_header_day">
+                            S
+                        </div>
+                    </div>
+                    <div class="calendar_row">
+                        <div class="calendar_day">                            
+                        </div><div class="calendar_day">                            
+                        </div><div class="calendar_day">
+                            1
+                        </div><div class="calendar_day">
+                            2
+                        </div><div class="calendar_day">
+                            3
+                        </div><div class="calendar_day">
+                            4
+                        </div><div class="calendar_day">
+                            5
+                        </div>
+                    </div><div class="calendar_row">
+                        <div class="calendar_day">
+                            6
+                        </div><div class="calendar_day">
+                            7
+                        </div><div class="calendar_day">
+                            8
+                        </div><div class="calendar_day">
+                            9
+                        </div><div class="calendar_day">
+                            10
+                        </div><div class="calendar_day">
+                            11
+                        </div><div class="calendar_day">
+                            12
+                        </div>
+                    </div><div class="calendar_row">
+                        <div class="calendar_day">
+                            13
+                        </div><div class="calendar_day">
+                            <div class="complete_day">14</div>
+                        </div><div class="calendar_day">
+                            <div class="parcial_day">15</div>
+                        </div><div class="calendar_day">
+                            <div class="parcial_day">16</div>
+                        </div><div class="calendar_day ">
+                            <div class="incomplete_day">17</div>
+                        </div><div class="calendar_day">
+                            18
+                        </div><div class="calendar_day">
+                            19
+                        </div>
+                    </div><div class="calendar_row">
+                        <div class="calendar_day">
+                            20
+                        </div><div class="calendar_day">
+                            21
+                        </div><div class="calendar_day">
+                            22
+                        </div><div class="calendar_day">
+                            23
+                        </div><div class="calendar_day">
+                            24
+                        </div><div class="calendar_day">
+                            25
+                        </div><div class="calendar_day">
+                            26
+                        </div>
+                    </div><div class="calendar_row">
+                        <div class="calendar_day">
+                            27
+                        </div><div class="calendar_day">
+                            28
+                        </div><div class="calendar_day">
+                            29
+                        </div><div class="calendar_day">
+                            30
+                        </div><div class="calendar_day">
+                            31
+                        </div><div class="calendar_day">
+                        </div><div class="calendar_day">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar_day_descriptions_content" align="left">
+                <div class="calendar_day_description">
+                    <div class="calendar_day_description_color complete_color"></div>
+                    <div class="calendar_day_description_label">Medicamento Tomado</div>
+                </div>
+                <div class="calendar_day_description">
+                    <div class="calendar_day_description_color incomplete_color"></div>
+                    <div class="calendar_day_description_label">Medicamento Olvidado</div>
+                </div>
+                <div class="calendar_day_description">
+                    <div class="calendar_day_description_color parcial_color"></div>
+                    <div class="calendar_day_description_label">Medicamento Próximo</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="extra_space"></div>
+        <div id="footer" align="center">
+            <div id="footer_label">MediTime 2025</div>
+        </div>
+    </div>
+    <div id="menu_lateral">
+        <div id="menu_background"></div>
+        <div id="menu_content">            
+            <div class="menu_option_content" redirectTo="home.html">
+                <div class="menu_option_icon">
+                    <img src="img/home_icon.png" height="50">
+                </div>
+                <div class="menu_option_description">Home</div>
+            </div>
+            <div class="menu_option_content" redirectTo="mis_medicamentos.html">
+                <div class="menu_option_icon">
+                    <img src="img/agregar_medicamento.png" height="50">
+                </div>
+                <div class="menu_option_description">Registro de Medicamentos</div>
+            </div>
+            <div class="menu_option_content" redirectTo="calendario.html">
+                <div class="menu_option_icon">
+                    <img src="img/calendario.png" height="50">
+                </div>
+                <div class="menu_option_description">Calendario</div>
+            </div>
+            <div class="menu_option_content" redirectTo="reportes.html">
+                <div class="menu_option_icon">
+                    <img src="img/folder_icon.png" height="50">
+                </div>
+                <div class="menu_option_description">Reportes</div>
+            </div>
+            <div class="menu_option_content" redirectTo="home.html">
+                <div class="menu_option_icon">
+                    <img src="img/cerrar_sesion_icon.png" height="50">
+                </div>
+                <div class="menu_option_description">Cerrar Sesión</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
